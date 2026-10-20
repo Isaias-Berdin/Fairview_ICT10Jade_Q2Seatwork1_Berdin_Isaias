@@ -2,12 +2,12 @@ from pyscript import document, display
 
 def checkmember(e):
     
-    name= ["isaias berdin", "hans arada", "gavin taguiga", "lexi cunanan", "carlos borromeo"]
+    name= ["Isaias Berdin", "Hans Arada", "Gavin Taguiga", "Lexi Cunanan", "Carlos Borromeo"]
     first= document.getElementById("first").value
     last= document.getElementById("last").value
     
     
-    fullname = (f"{first.lower()} {last.lower()}")
+    fullname = (f"{first.title()} {last.title()}")
     
     confirm_member = fullname in name
     
